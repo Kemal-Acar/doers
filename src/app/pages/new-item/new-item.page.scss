@@ -1,0 +1,11 @@
+.CreateIconButton {
+    --background: none;
+    --color-activated: var(--ion-color-success);
+    --ripple-color: var(--ion-color-success);
+}
+
+.CancelIconButton {
+    --background: none;
+    --color-activated: var(--ion-color-danger);
+    --ripple-color: var(--ion-color-danger);
+}

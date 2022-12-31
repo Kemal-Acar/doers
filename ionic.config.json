@@ -1,8 +1,5 @@
 {
   "name": "Doers",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular",
-  "id": "59d54959"
+  "integrations": {},
+  "type": "angular"
 }

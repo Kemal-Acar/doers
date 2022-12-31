@@ -1,0 +1,29 @@
+<ion-header>
+  <app-header headerName="History"></app-header>
+</ion-header>
+<ion-content>
+  <ion-accordion-group [value]="'done'" expand="inset">
+    <ion-accordion value="done">
+      <ion-item slot="header" color="light">
+        <ion-label>Done</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <app-item-card item="Groceries" notes="cucumber, apples, eggplant, cheese, meat, more meat" dueDate="Tomorrow"
+          createdDate="Yesterday" creator="you" [isInvitation]="false" [isDone]="true"></app-item-card>
+        <app-item-card item="Groceries" notes="cucumber, apples, eggplant, cheese, meat, more meat" dueDate="Tomorrow"
+          createdDate="Yesterday" creator="you" [isInvitation]="false" [isDone]="true"></app-item-card>
+        <app-item-card item="Groceries" notes="cucumber, apples, eggplant, cheese, meat, more meat" dueDate="Tomorrow"
+          createdDate="Yesterday" creator="you" [isInvitation]="false" [isDone]="true"></app-item-card>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>Removed</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <app-item-card item="Groceries" notes="cucumber, apples, eggplant, cheese, meat, more meat" dueDate="Tomorrow"
+          createdDate="Yesterday" creator="you" [isInvitation]="false" [isRemoved]="true"></app-item-card>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-card  [color]="cardColor">
+  <ion-card-header>
+    <ion-card-title>{{item}}</ion-card-title>
+    <ion-card-subtitle>Created by {{creator}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <p>Notes: {{notes}}</p>
+    <p>Created: {{createdDate}}</p>
+    <ion-avatar class="avatar">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-avatar class="avatar">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-avatar class="avatar">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <div *ngIf="showAddAndRemoveButtons">
+      <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+        <ion-fab-button size="small" color="success">
+          <ion-icon name="checkmark-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab class="closeFab" slot="fixed" edge="true" vertical="top" horizontal="end">
+        <ion-fab-button size="small" color="danger">
+          <ion-icon name="close-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+    <div *ngIf="isInvitation">
+      <app-accept-decline-grid></app-accept-decline-grid>
+    </div>
+  </ion-card-content>
+</ion-card>
