@@ -1,0 +1,6 @@
+{
+    "appId": "io.ionic.starter",
+    "appName": "Doers",
+    "webDir": "www",
+    "bundledWebRuntime": false
+}
