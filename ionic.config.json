@@ -1,5 +1,7 @@
 {
   "name": "Doers",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
